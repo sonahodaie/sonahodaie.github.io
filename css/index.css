@@ -76,6 +76,9 @@ html body div#layout div.container-narrow div#resume.page.side-by-side.resume-in
 form {
   text-align: left;
 }
+.g-recaptcha {
+  padding-left: 14px;
+}
 
 #push {
   height: 60px;
