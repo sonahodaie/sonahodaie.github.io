@@ -4,10 +4,22 @@
 .page {
   display:none;
 }
+#navbar {
+  float: right;
+}
 div.navbar div.navbar-inner {
   background: transparent;
   box-shadow: none;
   border: none;
+}
+.navbar-brand {
+  float: none;
+}
+.navbar-toggle {
+  background: #333;
+}
+.navbar-toggle .icon-bar {
+  background: #ddd;
 }
 
 .nav-collapse {
@@ -93,4 +105,28 @@ form {
   height:auto !important;
   height:100%;
   margin: 0 auto -60px;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .container-narrow {
+    padding: 0 20px;
+  }
+  #navbar {
+    float: none;
+    text-align: center;
+  }
+    #home > div > div {
+      text-align: center;
+      padding-top: 20px!important;
+    }
+    .navbar-brand img {
+      margin-top: 16px;
+    }
+  form .col-sm-10 {
+    padding-top: 0 !important;
+  }
 }

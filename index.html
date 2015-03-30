@@ -32,9 +32,8 @@
                 </button>
                 <a class="navbar-brand" href="#"><img src="img/sona_title.png"/></a>
             </div>
-            <div id="navbar" class="collapse navbar-collapse pull-right">
+            <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                  
                     <li class="active tab"><a href="#home"><img src="img/home_tab.png" style="margin-bottom: 4px"/></a></li>
                     <li class="tab"><a href="#resume"><img src="img/resume_tab.png" /></a></li>
                     <li class="tab"><a href="#bio"><img src="img/bio_tab.png"  style="margin-bottom: 4px"/></a></li>
@@ -47,9 +46,9 @@
 
             <!-- Home Page-->
             <div id="home" class="page" style="display: block"> 
-                <div class="row-fluid">
-                    <span style="vertical-align:middle"class="span8"><img src="img/sona.jpg"/></span> 
-                    <span style="vertical-align:middle;padding-top:135px" class="span4"><img src="img/hello_header.png"/></span> 
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-8"><img src="img/sona.jpg"/></div> 
+                    <div style=";padding-top:135px" class="col-lg-4 col-md-4 col-sm-4 text-right"><img src="img/hello_header.png"/></div> 
                 </div> 
             </div>
 
@@ -231,7 +230,7 @@
             <div id="bio" class="page" style="display: block"> 
                 <div class="page_header"><img src="img/bio_tab.png"/></div>
                 <br>
-                <h1>Coming Soon</h1> 
+                <h1 class="text-center">Coming Soon</h1> 
             </div>  
 
             <div id="contact" class="page" style="display: block">
@@ -301,6 +300,9 @@
             $(".tab").removeClass("active");
             $("a[href='"+hash+"']").parent().addClass("active");
         };
+        $(document).on('click', '.collapse.in', function() {
+            $('.navbar-collapse').collapse('hide');
+        });
         $(window).hashchange(onhashchange);
         onhashchange();
     </script> 
