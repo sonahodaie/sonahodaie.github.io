@@ -1,0 +1,93 @@
+ html,body {
+    height:100%;
+}
+.page {
+  display:none;
+}
+div.navbar div.navbar-inner {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+.nav-collapse {
+  float: right;
+}
+.container-narrow {
+  margin: 0 auto; 
+  max-width: 700px;
+}
+
+
+.tab a {
+  font-family: "aracane";
+  font-size: 40px;
+  outline: none;
+} 
+.tab.active {
+  background: #eee;
+}
+
+body {
+  background: url('../img/rotated.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  margin: 0;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 75px;
+  font-family: "aracane";
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.page_header {
+  text-align: center; 
+}
+
+.center_text {
+  text-align: center;
+}
+
+.side-by-side {
+  display: inline-block;
+}
+.header {
+
+  font-weight:bold;
+  font-size:50px;
+  font-family:"aracane";
+  padding: 8px;
+  width: 97px;
+
+
+}
+html body div#layout div.container-narrow div#resume.page.side-by-side.resume-info {
+  vertical-align: top;
+  font-family: Helvetica, Ariel, sans-serif; 
+  font-size: 13px;
+}
+
+form {
+  text-align: left;
+}
+
+#push {
+  height: 60px;
+}
+#footer p {
+  margin: 20px 0;
+
+}
+
+#wrap {
+  min-height: 100%;
+  height:auto !important;
+  height:100%;
+  margin: 0 auto -60px;
+}
